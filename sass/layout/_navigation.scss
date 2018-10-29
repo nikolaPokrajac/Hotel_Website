@@ -1,0 +1,38 @@
+.navigation {
+
+    &__logo {
+        height: 3rem;
+        float: left;
+        margin-top: 3rem;
+    }
+
+    &__list {
+        float: right;
+        list-style: none;
+        margin-top: 3rem;
+    }
+
+    &__item {
+        display: inline-block;
+        margin-left: 2rem;
+    }
+
+    &__link {
+
+        &:link,
+        &:visited {
+            font-size: 2rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $color-white;
+            padding: 1.5rem 0;
+            border-bottom: 2px solid transparent;
+            transition: all .3s;
+        }
+
+        &:hover,
+        &:active {
+            border-bottom: 2px solid $color-primary;
+        }
+    }
+}

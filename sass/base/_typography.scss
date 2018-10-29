@@ -1,5 +1,21 @@
 body {
     font-family: "Lato", "Arial", sans-serif;
     font-weight: 300;
+    line-height: 1.5;
     color: $color-grey-dark-3;
+}
+
+.heading-1 {
+    font-size: 4rem;
+    font-weight: 300;
+    color: $color-grey-light-1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    margin-bottom: 2rem;
+
+    &--main,
+    &--sub {
+        display: block;
+    }
 }

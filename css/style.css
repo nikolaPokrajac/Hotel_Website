@@ -11,7 +11,90 @@ html {
 body {
   box-sizing: border-box; }
 
+.container {
+  display: grid;
+  grid-template-rows: 90vh min-content 40vw repeat(4, min-content);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+
 body {
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 300;
+  line-height: 1.5;
   color: #333; }
+
+.heading-1 {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #f7f7f7;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  margin-bottom: 2rem; }
+  .heading-1--main, .heading-1--sub {
+    display: block; }
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+.btn:link, .btn:visited {
+  display: inline-block;
+  font-size: 1.7rem;
+  border: 1px solid #c69963;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: all .3s; }
+  .btn:link:hover, .btn:link:active, .btn:visited:hover, .btn:visited:active {
+    border: 1px solid #B28451;
+    background-color: #B28451; }
+
+.btn--full:link, .btn--full:visited {
+  background-color: #c69963;
+  color: #fff;
+  margin-right: 1.5rem; }
+
+.btn--ghost:link, .btn--ghost:visited {
+  color: #c69963; }
+
+.btn--ghost:hover, .btn--ghost:active {
+  color: #fff; }
+
+.header {
+  grid-column: full-start / full-end;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  .header__text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.navigation__logo {
+  height: 3rem;
+  float: left;
+  margin-top: 3rem; }
+
+.navigation__list {
+  float: right;
+  list-style: none;
+  margin-top: 3rem; }
+
+.navigation__item {
+  display: inline-block;
+  margin-left: 2rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 1.5rem 0;
+  border-bottom: 2px solid transparent;
+  transition: all .3s; }
+
+.navigation__link:hover, .navigation__link:active {
+  border-bottom: 2px solid #c69963; }

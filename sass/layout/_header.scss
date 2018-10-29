@@ -1,0 +1,15 @@
+.header {
+    grid-column: full-start / full-end;
+    background-image: linear-gradient(rgba($color-black, 0.6), rgba($color-black, 0.6)), url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &__text-box {
+        position: absolute;
+        width: 1140px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
