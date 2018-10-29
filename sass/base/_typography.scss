@@ -19,3 +19,29 @@ body {
         display: block;
     }
 }
+
+.heading-2 {
+    font-size: 3rem;
+    color: $color-grey-light-1;
+    text-transform: uppercase;
+    font-weight: 300;
+
+    &:after {
+        display: block;
+        content: "";
+        height: 2px;
+        background-color: $color-primary;
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+
+    &--dark {
+        color: $color-grey-dark-3;
+    }
+}
+
+.heading-5 {
+    font-size: 1.9rem;
+    font-weight: 400;
+}
