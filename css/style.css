@@ -126,6 +126,51 @@ body {
   .feature-box__text {
     font-size: 1.7rem; }
 
+.rooms {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 7rem; }
+
+.room {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 0.5rem; }
+  .room__img {
+    width: 100%;
+    grid-row: 1 / 2; }
+  .room__details {
+    display: flex;
+    padding: 1rem; }
+  .room__icon {
+    font-size: 1rem; }
+  .room__text {
+    font-size: 1.3rem;
+    margin-left: 1rem; }
+  .room__btn {
+    width: 100%;
+    text-align: center; }
+  .room__head {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem; }
+    .room__head__name {
+      font-size: 1.6rem;
+      font-weight: 400; }
+    .room__head--right {
+      display: flex;
+      flex-direction: column; }
+    .room__head__icon {
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      color: #101d2c; }
+    .room__head__span {
+      margin-left: 1rem;
+      font-size: 1.6rem; }
+
 .about__content {
   background-color: #f7f7f7;
   grid-column: full-start / col-end 4;
@@ -291,8 +336,11 @@ body {
 
 .section-testimonials {
   grid-column: full-start / full-end;
-  margin-bottom: 10rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/background.jpg);
   background-size: cover;
   background-attachment: fixed;
   padding: 8rem 8vw; }
+
+.section-rooms {
+  grid-column: center-start / center-end;
+  margin: 10rem 0; }
