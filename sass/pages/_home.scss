@@ -2,3 +2,12 @@
     grid-column: center-start / center-end;
     padding: 10rem 0;
 }
+
+.section-testimonials {
+    grid-column: full-start / full-end;
+    margin-bottom: 10rem;
+    background-image: linear-gradient(rgba($color-black, 0.7), rgba($color-black, 0.7)), url(../img/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 8rem 8vw;
+}
