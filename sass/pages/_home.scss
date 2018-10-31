@@ -1,6 +1,10 @@
 .section-features {
     grid-column: center-start / center-end;
     padding: 10rem 0;
+
+    @include respond(bp-medium) {
+        padding: 7rem 0;
+    }
 }
 
 .section-testimonials {
@@ -14,4 +18,9 @@
 .section-rooms {
     grid-column: center-start / center-end;
     margin: 10rem 0;
+
+    @include respond(bp-medium) {
+        margin-top: 7rem;
+        margin-bottom: 7rem;
+    }
 }

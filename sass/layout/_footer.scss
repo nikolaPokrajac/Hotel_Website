@@ -97,4 +97,8 @@
     margin: 6rem auto 0 auto;
     text-align: center;
     width: 70%;
+
+    @include respond(bp-large) {
+        width: 100%;
+    }
 }

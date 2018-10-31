@@ -18,6 +18,14 @@ body {
     &--sub {
         display: block;
     }
+
+    @include respond(bp-large) {
+        font-size: 3.5rem;
+    }
+
+    @include respond(bp-medium) {
+        font-size: 3rem;
+    }
 }
 
 .heading-2 {
@@ -39,18 +47,38 @@ body {
     &--dark {
         color: $color-grey-dark-3;
     }
+
+    @include respond(bp-large) {
+        font-size: 2.5rem;
+    }
 }
 
 .heading-3 {
     font-size: 4rem;
     font-weight: 400;
     color: $color-black;
+
+    @include respond(bp-large) {
+        font-size: 3.5rem;
+    }
+
+    @include respond(bp-medium) {
+        font-size: 3rem;
+    }
 }
 
 .heading-4 {
     font-size: 2rem;
     color: $color-grey-dark-1;
     font-weight: 300;
+
+    @include respond(bp-large) {
+        font-size: 1.8rem;
+    }
+
+    @include respond(bp-medium) {
+        font-size: 1.6rem;
+    }
 }
 
 .heading-5 {

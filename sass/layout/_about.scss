@@ -9,6 +9,10 @@
         display: grid;
         align-content: center;
         justify-items: start;
+
+        @include respond(bp-medium) {
+            grid-column: 1 / -1;
+        }
     }
 
     &__text {
@@ -25,6 +29,15 @@
         grid-template-rows: repeat(6, 1fr);
         grid-template-columns: repeat(6, 1fr);
         align-items: center;
+
+        @include respond(bp-medium) {
+            grid-column: 1 / -1;
+            padding: 6rem;
+        }
+
+        @include respond(bp-small) {
+            padding: 3rem;
+        }
     }
 
     &__img--1 {

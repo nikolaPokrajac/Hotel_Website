@@ -1,6 +1,14 @@
 .row {
     max-width: 1140px;
     margin: 0 auto;
+
+    @include respond(bp-largest) {
+        padding: 0 2%;
+    }
+
+    @include respond(bp-medium) {
+        padding: 0 4%;
+    }
 }
 
 .u-center-text {

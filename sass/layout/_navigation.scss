@@ -1,5 +1,4 @@
 .navigation {
-
     &__logo {
         height: 3rem;
         float: left;
@@ -27,7 +26,7 @@
             color: $color-white;
             padding: 1.5rem 0;
             border-bottom: 2px solid transparent;
-            transition: all .3s;
+            transition: all 0.3s;
         }
 
         &:hover,
@@ -35,4 +34,46 @@
             border-bottom: 2px solid $color-primary;
         }
     }
+}
+
+// Sticky navigation
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba($color-white, 0.98);
+    box-shadow: 0 2px 2px $color-grey-light-2;
+    z-index: 9999;
+
+    .navigation__list {
+        margin-top: 1rem;
+    }
+
+    .navigation__list li a:link,
+    .navigation__list li a:visited {
+        padding: 1rem 0;
+        color: $color-grey-dark-1;
+    }
+
+    .navigation__logo {
+        display: none;
+    }
+
+    .navigation__logo--black {
+        display: block;
+    }
+}
+
+.navigation {
+    padding-bottom: 0.8rem;
+}
+
+.navigation__logo--black {
+    height: 2.5rem;
+    width: auto;
+    float: left;
+    margin-top: 1.2rem;
+    display: none;
 }
