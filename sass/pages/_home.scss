@@ -17,10 +17,10 @@
 
 .section-rooms {
     grid-column: center-start / center-end;
-    margin: 10rem 0;
+    padding: 10rem 0;
 
     @include respond(bp-medium) {
-        margin-top: 7rem;
-        margin-bottom: 7rem;
+        padding-top: 7rem;
+        padding-bottom: 7rem;
     }
 }

@@ -1,3 +1,9 @@
+.js--wp-1 {
+  opacity: 0; }
+
+.js--wp-1.animated {
+  opacity: 1; }
+
 *,
 *::after,
 *::before {
@@ -489,8 +495,8 @@ body {
 
 .section-rooms {
   grid-column: center-start / center-end;
-  margin: 10rem 0; }
+  padding: 10rem 0; }
   @media only screen and (max-width: 50em) {
     .section-rooms {
-      margin-top: 7rem;
-      margin-bottom: 7rem; } }
+      padding-top: 7rem;
+      padding-bottom: 7rem; } }

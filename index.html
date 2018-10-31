@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
@@ -16,23 +17,23 @@
 
 <body class="container">
 
-    <header class="header">
+    <header class="header" id="top">
         <nav class="navigation">
             <div class="row">
                 <img src="img/logo-white.png" alt="Hotel logo" class="navigation__logo">
                 <img src="img/logo-black.png" alt="Hotel logo dark" class="navigation__logo--black">
                 <ul class="navigation__list">
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Home</a>
+                        <a href="#top" class="navigation__link scroll">Home</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Features</a>
+                        <a href="#features" class="navigation__link scroll">Features</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">About</a>
+                        <a href="#about" class="navigation__link scroll">About</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Rooms</a>
+                        <a href="#rooms" class="navigation__link scroll">Rooms</a>
                     </li>
                 </ul>
             </div>
@@ -43,19 +44,19 @@
                 <span class="heading-1--main">Welcome to paradise</span>
                 <span class="heading-1--sub">near the blue sea.</span>
             </h1>
-            <a href="#" class="btn btn--full">Sign up</a>
-            <a href="#" class="btn btn--ghost">Show me more</a>
+            <a href="#" class="btn btn--full js--scroll-to-rooms">Sign up</a>
+            <a href="#" class="btn btn--ghost js--scroll-to-start">Show me more</a>
         </div>
     </header>
 
-    <section class="section-features js--section-features">
+    <section class="section-features js--section-features" id="features">
         <div class="u-center-text u-margin-bottom-big">
             <h2 class="heading-2 heading-2--dark">
                 Our Features
             </h2>
         </div>
 
-        <div class="features">
+        <div class="features js--wp-1">
             <div class="feature-box">
                 <i class="fas fa-globe feature-box__icon"></i>
                 <h5 class="heading-5">World's best luxury rooms</h5>
@@ -97,7 +98,7 @@
         </div>
     </section>
 
-    <div class="about__content">
+    <div class="about__content" id="about">
         <h4 class="heading-4">Stay with our luxury rooms</h4>
         <h3 class="heading-3">Stay and Enjoy</h3>
         <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus illo similique natus, a
@@ -163,7 +164,7 @@
         </div>
     </section>
 
-    <section class="section-rooms">
+    <section class="section-rooms js--section-rooms" id="rooms">
         <div class="u-center-text u-margin-bottom-medium">
             <h2 class="heading-2 heading-2--dark">
                 Accommodation
