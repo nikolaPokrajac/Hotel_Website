@@ -34,3 +34,9 @@
         ; //1200px
     }
 }
+
+@media only screen and (min-width:38em) {
+    .navigation__list {
+        display: block !important;
+    }
+}

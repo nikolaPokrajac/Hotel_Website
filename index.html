@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Book today and enjoy a luxurious stay. Best Price Guarantee. Private 24-hour butler. Private Beach. Amenities: Free Wifi, Swimming Pool, Restaurants and Lounges, 24/7 concierge.">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicons/favicon.png">
 
     <title>Hotel | Website</title>
 </head>
@@ -20,10 +22,13 @@
     <header class="header" id="top">
         <nav class="navigation">
             <div class="row">
-                <img src="img/logo-white.png" alt="Hotel logo" class="navigation__logo">
-                <img src="img/logo-black.png" alt="Hotel logo dark" class="navigation__logo--black">
-                <ul class="navigation__list">
-                    <li class="navigation__item">
+                <img src="img/logo/logo-white.png" alt="Hotel logo" class="navigation__logo">
+                <img src="img/logo/logo-black.png" alt="Hotel logo dark" class="navigation__logo--black">
+                <input type="checkbox" class="navigation__checkbox js--navigation__checkbox" id="navi-toggle">
+                <label for="navi-toggle" class="navigation__icon js--navigation-icon">
+                </label>
+                <ul class="navigation__list js--navigation__list">
+                    <li class="navigation__item js--navigation-list">
                         <a href="#top" class="navigation__link scroll">Home</a>
                     </li>
                     <li class="navigation__item">
@@ -39,7 +44,7 @@
             </div>
         </nav>
 
-        <div class="header__text-box">
+        <div class="header__text-box js--text-box">
             <h1 class="heading-1">
                 <span class="heading-1--main">Welcome to paradise</span>
                 <span class="heading-1--sub">near the blue sea.</span>
@@ -108,23 +113,23 @@
     </div>
 
     <div class="about__pictures">
-        <img src="img/about-1.jpg" alt="" class="about__img--1">
-        <img src="img/about-2.jpg" alt="" class="about__img--2">
-        <img src="img/about-3.jpg" alt="" class="about__img--3">
+        <img src="img/about/about-1.jpg" alt="" class="about__img--1">
+        <img src="img/about/about-2.jpg" alt="" class="about__img--2">
+        <img src="img/about/about-3.jpg" alt="" class="about__img--3">
     </div>
 
     <section class="gallery">
-        <figure class="gallery__item gallery__item--1"><img src="img/gal-1.jpg" alt="Gallery image 1" class="gallery__img"></figure>
-        <figure class="gallery__item gallery__item--2"><img src="img/gal-2.jpg" alt="Gallery image 2" class="gallery__img"></figure>
-        <figure class="gallery__item gallery__item--3"><img src="img/gal-3.jpg" alt="Gallery image 3" class="gallery__img"></figure>
-        <figure class="gallery__item gallery__item--4"><img src="img/gal-4.jpg" alt="Gallery image 4" class="gallery__img"></figure>
-        <figure class="gallery__item gallery__item--5"><img src="img/gal-5.jpg" alt="Gallery image 5" class="gallery__img"></figure>
-        <figure class="gallery__item gallery__item--6"><img src="img/gal-6.jpg" alt="Gallery image 6" class="gallery__img"></figure>
-        <figure class="gallery__item gallery__item--7"><img src="img/gal-7.jpg" alt="Gallery image 7" class="gallery__img"></figure>
-        <figure class="gallery__item gallery__item--8"><img src="img/gal-8.jpg" alt="Gallery image 8" class="gallery__img"></figure>
-        <figure class="gallery__item gallery__item--9"><img src="img/gal-9.jpg" alt="Gallery image 9" class="gallery__img"></figure>
-        <figure class="gallery__item gallery__item--10"><img src="img/gal-10.jpg" alt="Gallery image 10" class="gallery__img"></figure>
-        <figure class="gallery__item gallery__item--11"><img src="img/gal-11.jpg" alt="Gallery image 11" class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--1"><img src="img/gallery/gal-1.jpg" alt="Gallery image 1" class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--2"><img src="img/gallery/gal-2.jpg" alt="Gallery image 2" class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--3"><img src="img/gallery/gal-3.jpg" alt="Gallery image 3" class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--4"><img src="img/gallery/gal-4.jpg" alt="Gallery image 4" class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--5"><img src="img/gallery/gal-5.jpg" alt="Gallery image 5" class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--6"><img src="img/gallery/gal-6.jpg" alt="Gallery image 6" class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--7"><img src="img/gallery/gal-7.jpg" alt="Gallery image 7" class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--8"><img src="img/gallery/gal-8.jpg" alt="Gallery image 8" class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--9"><img src="img/gallery/gal-9.jpg" alt="Gallery image 9" class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--10"><img src="img/gallery/gal-10.jpg" alt="Gallery image 10" class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--11"><img src="img/gallery/gal-11.jpg" alt="Gallery image 11" class="gallery__img"></figure>
     </section>
 
     <section class="section-testimonials">
@@ -139,7 +144,8 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius suscipit eum quos repellat. Iusto
                     cumque optio enim, ipsum vitae ad. Assumenda provident aspernatur voluptates hic explicabo
                     reiciendis, culpa quae obcaecati.
-                    <cite class="testimonials__cite"><img src="img/customer-1.jpg" alt="Customer 1 photo" class="testimonials__img">Enrique
+                    <cite class="testimonials__cite"><img src="img/customers/customer-1.jpg" alt="Customer 1 photo"
+                            class="testimonials__img">Enrique
                         Mendoza</cite>
                 </blockquote>
             </div>
@@ -148,7 +154,8 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius suscipit eum quos repellat. Iusto
                     cumque optio enim, ipsum vitae ad. Assumenda provident aspernatur voluptates hic explicabo
                     reiciendis, culpa quae obcaecati.
-                    <cite class="testimonials__cite"><img src="img/customer-2.jpg" alt="Customer 2 photo" class="testimonials__img">Jennifer
+                    <cite class="testimonials__cite"><img src="img/customers/customer-2.jpg" alt="Customer 2 photo"
+                            class="testimonials__img">Jennifer
                         Grant</cite>
                 </blockquote>
             </div>
@@ -157,7 +164,8 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius suscipit eum quos repellat. Iusto
                     cumque optio enim, ipsum vitae ad. Assumenda provident aspernatur voluptates hic explicabo
                     reiciendis, culpa quae obcaecati.
-                    <cite class="testimonials__cite"><img src="img/customer-3.jpg" alt="Customer 3 photo" class="testimonials__img">Dylan
+                    <cite class="testimonials__cite"><img src="img/customers/customer-3.jpg" alt="Customer 3 photo"
+                            class="testimonials__img">Dylan
                         Bennett</cite>
                 </blockquote>
             </div>
@@ -173,7 +181,7 @@
 
         <div class="rooms">
             <div class="room">
-                <img src="img/room-1.jpg" alt="Double Room Image" class="room__img">
+                <img src="img/rooms/room-1.jpg" alt="Double Room Image" class="room__img">
                 <div class="room__head">
                     <div class="room__head--left">
                         <i class="fas fa-star room__head__icon"></i>
@@ -184,7 +192,7 @@
                         <h5 class="room__head__name">Double Room</h5>
                     </div>
                     <div class="room__head--right">
-                        <i class="fas fa-retweet room__head__icon"><span class="room__head__span">65&sup2s</span></i>
+                        <i class="fas fa-retweet room__head__icon"><span class="room__head__span">65m&sup2;</span></i>
                         <i class="fas fa-users room__head__icon"><span class="room__head__span">2 guests</span></i>
                     </div>
                 </div>
@@ -208,7 +216,7 @@
             </div>
 
             <div class="room">
-                <img src="img/room-2.jpg" alt="Family Room Image" class="room__img">
+                <img src="img/rooms/room-2.jpg" alt="Family Room Image" class="room__img">
                 <div class="room__head">
                     <div class="room__head--left">
                         <i class="fas fa-star room__head__icon"></i>
@@ -219,7 +227,7 @@
                         <h5 class="room__head__name">Family Room</h5>
                     </div>
                     <div class="room__head--right">
-                        <i class="fas fa-retweet room__head__icon"><span class="room__head__span">69&sup2s</span></i>
+                        <i class="fas fa-retweet room__head__icon"><span class="room__head__span">69m&sup2;</span></i>
                         <i class="fas fa-users room__head__icon"><span class="room__head__span">3 guests</span></i>
                     </div>
                 </div>
@@ -243,7 +251,7 @@
             </div>
 
             <div class="room">
-                <img src="img/room-3.jpg" alt="Deluxe Room Image" class="room__img">
+                <img src="img/rooms/room-3.jpg" alt="Deluxe Room Image" class="room__img">
                 <div class="room__head">
                     <div class="room__head--left">
                         <i class="fas fa-star room__head__icon"></i>
@@ -254,7 +262,7 @@
                         <h5 class="room__head__name">Deluxe Room</h5>
                     </div>
                     <div class="room__head--right">
-                        <i class="fas fa-retweet room__head__icon"><span class="room__head__span">72&sup2s</span></i>
+                        <i class="fas fa-retweet room__head__icon"><span class="room__head__span">72m&sup2;</span></i>
                         <i class="fas fa-users room__head__icon"><span class="room__head__span">2 guests</span></i>
                     </div>
                 </div>
@@ -278,7 +286,7 @@
             </div>
 
             <div class="room">
-                <img src="img/room-4.jpg" alt="Luxury Room Image" class="room__img">
+                <img src="img/rooms/room-4.jpg" alt="Luxury Room Image" class="room__img">
                 <div class="room__head">
                     <div class="room__head--left">
                         <i class="fas fa-star room__head__icon"></i>
@@ -289,7 +297,7 @@
                         <h5 class="room__head__name">Luxury Room</h5>
                     </div>
                     <div class="room__head--right">
-                        <i class="fas fa-retweet room__head__icon"><span class="room__head__span">85&sup2s</span></i>
+                        <i class="fas fa-retweet room__head__icon"><span class="room__head__span">85m&sup2;</span></i>
                         <i class="fas fa-users room__head__icon"><span class="room__head__span">3 guests</span></i>
                     </div>
                 </div>
@@ -309,11 +317,11 @@
                     <i class="fas fa-check room__icon"></i>
                     <p class="room__text">Baby sitting facilities</p>
                 </div>
-                <a href="#" class="btn btn--full room__btn">Double room</a>
+                <a href="#" class="btn btn--full room__btn">Reserve a room</a>
             </div>
 
             <div class="room">
-                <img src="img/room-5.jpg" alt="Premier Suite Room" class="room__img">
+                <img src="img/rooms/room-5.jpg" alt="Premier Suite Room" class="room__img">
                 <div class="room__head">
                     <div class="room__head--left">
                         <i class="fas fa-star room__head__icon"></i>
@@ -324,7 +332,7 @@
                         <h5 class="room__head__name">Premier Suite Room</h5>
                     </div>
                     <div class="room__head--right">
-                        <i class="fas fa-retweet room__head__icon"><span class="room__head__span">65&sup2s</span></i>
+                        <i class="fas fa-retweet room__head__icon"><span class="room__head__span">65m&sup2;</span></i>
                         <i class="fas fa-users room__head__icon"><span class="room__head__span">2 guests</span></i>
                     </div>
                 </div>
@@ -348,7 +356,7 @@
             </div>
 
             <div class="room">
-                <img src="img/room-6.jpg" alt="Superior Room Twin Image" class="room__img">
+                <img src="img/rooms/room-6.jpg" alt="Superior Room Twin Image" class="room__img">
                 <div class="room__head">
                     <div class="room__head--left">
                         <i class="fas fa-star room__head__icon"></i>
@@ -359,7 +367,7 @@
                         <h5 class="room__head__name">Superior Room Twin</h5>
                     </div>
                     <div class="room__head--right">
-                        <i class="fas fa-retweet room__head__icon"><span class="room__head__span">61&sup2s</span></i>
+                        <i class="fas fa-retweet room__head__icon"><span class="room__head__span">61m&sup2;</span></i>
                         <i class="fas fa-users room__head__icon"><span class="room__head__span">2 guests</span></i>
                     </div>
                 </div>
@@ -404,7 +412,7 @@
                     <p class="footer__heading">Connect With Us</p>
                 </li>
                 <li class="footer__item">
-                    <p class="footer__text">We are socialized. Follow us</p>
+                    <p class="footer__text">We are socialized. Follow us.</p>
                 </li>
                 <li class="footer__social">
                     <a href="" class="footer__link"><i class="fab fa-facebook footer__icon"></i></a>
