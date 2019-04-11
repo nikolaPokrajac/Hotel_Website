@@ -1,86 +1,107 @@
 body {
-    font-family: "Lato", "Arial", sans-serif;
-    font-weight: 300;
-    line-height: 1.5;
-    color: $color-grey-dark-3;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color: $color-grey-dark-3;
 }
 
 .heading-1 {
-    font-size: 4rem;
-    font-weight: 300;
-    color: $color-grey-light-1;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    margin-bottom: 2rem;
+  font-size: 4rem;
+  font-weight: 300;
+  color: $color-grey-light-1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  margin-bottom: 2rem;
 
-    &--main,
-    &--sub {
-        display: block;
-    }
+  &--main,
+  &--sub {
+    display: block;
+  }
 
-    @include respond(bp-large) {
-        font-size: 3.5rem;
-    }
+  @include respond(bp-large) {
+    font-size: 3.5rem;
+  }
 
-    @include respond(bp-medium) {
-        font-size: 3rem;
-    }
+  @include respond(bp-medium) {
+    font-size: 3rem;
+  }
 }
 
 .heading-2 {
-    font-size: 3rem;
-    color: $color-grey-light-1;
-    text-transform: uppercase;
-    font-weight: 300;
+  font-size: 3rem;
+  color: $color-grey-light-1;
+  text-transform: uppercase;
+  font-weight: 300;
 
-    &:after {
-        display: block;
-        content: "";
-        height: 2px;
-        background-color: $color-primary;
-        width: 100px;
-        margin: 0 auto;
-        margin-top: 3rem;
-    }
+  &:after {
+    display: block;
+    content: '';
+    height: 2px;
+    background-color: $color-primary;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
 
-    &--dark {
-        color: $color-grey-dark-3;
-    }
+  &--dark {
+    color: $color-grey-dark-3;
+  }
 
-    @include respond(bp-large) {
-        font-size: 2.5rem;
-    }
+  @include respond(bp-large) {
+    font-size: 2.5rem;
+  }
 }
 
 .heading-3 {
-    font-size: 4rem;
-    font-weight: 400;
-    color: $color-black;
+  font-size: 4rem;
+  font-weight: 400;
+  color: $color-black;
 
-    @include respond(bp-large) {
-        font-size: 3.5rem;
-    }
+  @include respond(bp-large) {
+    font-size: 3.5rem;
+  }
 
-    @include respond(bp-medium) {
-        font-size: 3rem;
-    }
+  @include respond(bp-medium) {
+    font-size: 3rem;
+  }
 }
 
 .heading-4 {
-    font-size: 2rem;
-    color: $color-grey-dark-1;
-    font-weight: 300;
+  font-size: 2rem;
+  color: $color-grey-dark-1;
+  font-weight: 300;
 
-    @include respond(bp-large) {
-        font-size: 1.8rem;
-    }
+  &--dark {
+    font-weight: 400;
+    color: $color-grey-dark-3;
+  }
 
-    @include respond(bp-medium) {
-        font-size: 1.6rem;
-    }
+  @include respond(bp-large) {
+    font-size: 1.8rem;
+  }
+
+  @include respond(bp-medium) {
+    font-size: 1.6rem;
+  }
 }
 
 .heading-5 {
-    font-size: 1.9rem;
+  font-size: 1.9rem;
+  padding: 1rem 0;
+
+  @include respond(bp-small) {
+    font-size: 1.6rem;
+  }
+}
+
+.heading-6 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-bottom: .5rem;
+
+  @include respond(bp-small) {
+    font-size: 1.1rem;
+    padding: .5rem 1rem;
+  }
 }

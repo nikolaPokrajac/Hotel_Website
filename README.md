@@ -2,6 +2,8 @@
 
 Hotel Website created useing HTML, SCSS, CSS Grid and jQuery.
 
+Check out [Live Demo](https://nikolapokrajac.github.io/Hotel_Website/)
+
 ### Getting Started
 
 There are two methods for getting started with this repo.
