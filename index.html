@@ -146,7 +146,7 @@
         deleniti obcaecati quibusdam inventore fuga eveniet! Qui delectus
         tempore amet!
       </p>
-      <a href="#" class="btn btn--full">More about us</a>
+      <a href="#popup-about" class="btn btn--full">More about us</a>
     </div>
 
     <div class="about__pictures">
@@ -338,7 +338,7 @@
             <i class="fas fa-check room__icon"></i>
             <p class="room__text">Baby sitting facilities</p>
           </div>
-          <a href="#" class="btn btn--full room__btn">Reserve a room</a>
+          <a href="#popup-room" class="btn btn--full room__btn">Reserve a room</a>
         </div>
 
         <div class="room">
@@ -381,7 +381,7 @@
             <i class="fas fa-check room__icon"></i>
             <p class="room__text">Baby sitting facilities</p>
           </div>
-          <a href="#" class="btn btn--full room__btn">Reserve a room</a>
+          <a href="#popup-room" class="btn btn--full room__btn">Reserve a room</a>
         </div>
 
         <div class="room">
@@ -424,7 +424,7 @@
             <i class="fas fa-check room__icon"></i>
             <p class="room__text">Baby sitting facilities</p>
           </div>
-          <a href="#" class="btn btn--full room__btn">Reserve a room</a>
+          <a href="#popup-room" class="btn btn--full room__btn">Reserve a room</a>
         </div>
 
         <div class="room">
@@ -467,7 +467,7 @@
             <i class="fas fa-check room__icon"></i>
             <p class="room__text">Baby sitting facilities</p>
           </div>
-          <a href="#" class="btn btn--full room__btn">Reserve a room</a>
+          <a href="#popup-room" class="btn btn--full room__btn">Reserve a room</a>
         </div>
 
         <div class="room">
@@ -510,7 +510,7 @@
             <i class="fas fa-check room__icon"></i>
             <p class="room__text">Baby sitting facilities</p>
           </div>
-          <a href="#" class="btn btn--full room__btn">Reserve a room</a>
+          <a href="#popup-room" class="btn btn--full room__btn">Reserve a room</a>
         </div>
 
         <div class="room">
@@ -553,7 +553,9 @@
             <i class="fas fa-check room__icon"></i>
             <p class="room__text">Baby sitting facilities</p>
           </div>
-          <a href="#" class="btn btn--full room__btn">Reserve a room</a>
+          <a href="#popup-room" class="btn btn--full room__btn"
+            >Reserve a room</a
+          >
         </div>
       </div>
     </section>
@@ -622,6 +624,78 @@
         officia fugit porro modi perspiciatis possimus deleniti nesciunt.!
       </p>
     </footer>
+
+    <!-- Popup for About us -->
+    <div class="popup" id="popup-about">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="./img/gallery/gal-1.jpg" alt="" class="popup__img" />
+          <img src="./img/gallery/gal-2.jpg" alt="" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#about" class="popup__close">&times;</a>
+          <h3 class="heading-3 u-margin-bottom-small">Start booking now</h3>
+          <h4 class="heading-4 heading-4--dark u-margin-bottom-small">
+            Important &ndash; Please read these terms before booking
+          </h4>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac neque
+            dignissim, placerat odio a, aliquet lorem. Praesent ac dapibus
+            risus, et rhoncus risus. Pellentesque habitant morbi tristique
+            senectus et netus et malesuada fames ac turpis egestas. Fusce
+            aliquet viverra tristique. Cras viverra metus eget aliquet tempor.
+            Vivamus imperdiet nisl nulla, at laoreet ex commodo non. Cras a
+            mattis massa, vitae fermentum tellus.
+          </p>
+          <a href="#rooms" class="btn btn--full u-max-width-on-mobile">Book now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup for Reserve a room -->
+    <div class="popup" id="popup-room">
+      <div class="popup__content">
+        <form action="#" class="popup__form">
+          <div class="popup__contact">
+          <h5 class="heading-5">BOOKING & CONTACT</h5>
+          <div class="popup__group">
+              <input type="text" class="popup__input" placeholder="Full name" id="name" required>
+              <label for="name" class="popup__label">Full name</label>
+          </div>
+          <div class="popup__group">
+              <input type="tel" class="popup__input" placeholder="Phone number" id="phone" required>
+              <label for="phone" class="popup__label">Phone number</label>
+          </div>
+          <div class="popup__group">
+              <input type="email" class="popup__input" placeholder="Email address" id="email" required>
+              <label for="email" class="popup__label">Email address</label>
+          </div>
+        </div>
+
+          <div class="popup__details">
+              <a href="#rooms" class="popup__close">&times;</a>
+              <h5 class="heading-5">DETAILS</h4>
+                <div class="popup__dates">
+                  <div class="popup__group popup__date">
+                    <input type="date" class="popup__input" id="arrive" name="arrive" value="" required>
+                    <label for="arrive" class="popup__label">Arrive:</label>
+                  </div>
+                  <div class="popup__group  popup__date">
+                    <input type="date" class="popup__input" id="depart" name="depart" value="" required>
+                    <label for="depart" class="popup__label">Depart:</label>
+                  </div>
+                </div>
+                <h6 class="heading-6">Please describe your needs e.g. Extra beds, children's cots</h6>
+                <div class="popup__group">
+                <textarea name="" id="" class="popup__textarea" placeholder="Comments"></textarea>
+                </div>
+                <div class="popup__group">
+                  <button class="btn btn--full u-max-width-on-mobile">Make a reservation</button>
+                </div>
+          </div>
+        </form>
+      </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/main.min.js"></script>
