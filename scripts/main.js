@@ -55,26 +55,44 @@ $(document).ready(function() {
     }
   );
 
-  /* Mobile navigation */
-  $('.js--navigation-icon').click(function() {
-    var nav = $('.js--navigation__list');
-    var icon = $('.js--navigation-icon');
-    var textBox = $('.js--text-box');
-
-    $(textBox).hide();
-
-    nav.slideToggle(200);
-
-    $(icon).click(function() {
-      $(textBox).toggle();
-    });
-  });
-
   // Display .text-box if mobile menu wasnt closed before resizeing screen
   $(window).resize(function() {
     var sWidth = $(window).width();
     if (sWidth > 600) {
       $('.js--text-box').show();
+      $('.js--navigation-list').removeClass('active');
+      $('.js--navigation-checkbox').prop('checked', false);
     }
   });
 });
+
+var navList = document.querySelector('.js--navigation-list');
+var navIcon = document.querySelector('.js--navigation-icon');
+var textBox = document.querySelector('.js--text-box');
+var navLink = document.querySelectorAll('.js--navigation-link');
+var checkbox = document.querySelector('.js--navigation-checkbox');
+
+// open and close nav
+navIcon.addEventListener('click', function() {
+  navList.classList.toggle('active');
+});
+
+// display and hide header text
+function textBoxDisplay() {
+  if (textBox.style.display === 'none') {
+    textBox.style.display = 'block';
+  } else {
+    textBox.style.display = 'none';
+  }
+}
+
+navIcon.addEventListener('click', textBoxDisplay);
+
+// Closing hamburger menu after clicking on a nav link
+for (i = 0; i < navLink.length; i++) {
+  navLink[i].addEventListener('click', function() {
+    navList.classList.remove('active');
+    checkbox.checked = false;
+    textBox.style.display = 'block';
+  });
+}
