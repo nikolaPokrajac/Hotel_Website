@@ -26,7 +26,7 @@
   }
 
   /* ------------------------------ */
-  /* Open state*/ 
+  /* Open state*/
   /* ------------------------------ */
   &:target {
     opacity: 1;
@@ -58,7 +58,7 @@
   }
 
   /* ------------------------------ */
-  /* More about us button           */ 
+  /* More about us button           */
   /* ------------------------------ */
   &__left {
     flex: 0 0 30%;
@@ -78,7 +78,6 @@
   &__img {
     display: block;
     width: 100%;
-    flex: 1;
   }
 
   &__text {
@@ -94,7 +93,7 @@
   }
 
   /* ------------------------------ */
-  /* Reserve a room form            */ 
+  /* Reserve a room form            */
   /* ------------------------------ */
   &__form {
     width: 100%;
@@ -111,12 +110,12 @@
     padding: 1.5rem 2rem;
 
     @include respond(bp-medium) {
-      padding: 1.5rem 2rem 0 2rem;   
-      }
+      padding: 1.5rem 2rem 0 2rem;
+    }
 
-      @include respond(bp-small) {
-        padding: 1rem 1.5rem 0 1.5rem;
-      }
+    @include respond(bp-small) {
+      padding: 1rem 1.5rem 0 1.5rem;
+    }
   }
 
   &__details {
@@ -126,12 +125,12 @@
     padding: 1.5rem 2rem;
 
     @include respond(bp-medium) {
-      padding: 0rem 2rem 1.5rem 2rem;   
-      }
+      padding: 0rem 2rem 1.5rem 2rem;
+    }
 
-      @include respond(bp-small) {
-        padding: 0 1.5rem 1rem 1.5rem;
-      }
+    @include respond(bp-small) {
+      padding: 0 1.5rem 1rem 1.5rem;
+    }
   }
 
   &__group {
@@ -190,7 +189,6 @@
     justify-content: space-between;
 
     @include respond(bp-small) {
-
     }
   }
 
@@ -202,7 +200,7 @@
     height: 8.5rem;
     min-width: 100%;
     color: $color-grey-dark-2;
-    padding: .5rem;
+    padding: 0.5rem;
 
     &:focus {
       outline: none;
