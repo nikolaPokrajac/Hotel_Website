@@ -1,6 +1,6 @@
 # Hotel_Website
 
-Hotel Website created useing HTML, SCSS, CSS Grid and jQuery.
+Hotel Website created using HTML, SCSS, CSS Grid and jQuery.
 
 Check out [Live Demo](https://nikolapokrajac.github.io/Hotel_Website/)
 
